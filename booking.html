@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Riwayat Pemesanan Paket Wisata Saya di RajaWisata - Kelola daftar booking, jadwal keberangkatan, dan rincian biaya liburan Anda.">
+    <title>Booking Saya - RajaWisata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo RajaWisata" class="logo-img">
+            <span class="logo">RAJAWISATA</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu Navigasi" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="destinasi.html">DESTINASI</a></li>
+            <li><a href="galeri.html">GALERI</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="tentang.html">TENTANG</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HEADER HALAMAN -->
+        <section class="page-header">
+            <h1>Booking Saya</h1>
+            <p>Daftar riwayat pemesanan tiket dan tur wisata yang tersimpan di perangkat Anda</p>
+        </section>
+
+        <!-- KONTEN DAFTAR BOOKING -->
+        <section class="booking-section">
+            <div class="booking-header-bar">
+                <h2>Riwayat Pemesanan Wisata</h2>
+                <button type="button" id="btnClearAllBookings" class="btn btn-danger-outline" style="display: none;">
+                    🗑️ Hapus Semua Riwayat
+                </button>
+            </div>
+
+            <!-- CONTAINER TABEL BOOKING ATAU PESAN KOSONG -->
+            <div id="bookingListContainer">
+                <!-- Dirender secara dinamis oleh script.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 RajaWisata. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

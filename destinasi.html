@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Katalog Lengkap Destinasi Wisata Indonesia di RajaWisata - Cari dan filter wisata bahari, gunung, pantai, dan danau terbaik dengan harga terjangkau.">
+    <title>Destinasi Wisata - RajaWisata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo RajaWisata" class="logo-img">
+            <span class="logo">RAJAWISATA</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu Navigasi" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="destinasi.html">DESTINASI</a></li>
+            <li><a href="galeri.html">GALERI</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="tentang.html">TENTANG</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HEADER HALAMAN -->
+        <section class="page-header">
+            <h1>Destinasi Wisata</h1>
+            <p>Jelajahi surga tersembunyi Nusantara dari puncak gunung hingga kedalaman laut</p>
+        </section>
+
+        <!-- FITUR 3: PENCARIAN & FILTER KATEGORI -->
+        <section class="filter-section">
+            <div class="search-box-wrapper">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="text" 
+                    id="searchDestinasi" 
+                    class="search-box" 
+                    placeholder="Cari destinasi atau lokasi (misal: Bromo, Bali, Papua)..."
+                    aria-label="Cari destinasi wisata"
+                >
+            </div>
+
+            <div class="filter-buttons">
+                <button type="button" class="filter-btn active" data-kategori="Semua">Semua</button>
+                <button type="button" class="filter-btn" data-kategori="Wisata Bahari">Wisata Bahari</button>
+                <button type="button" class="filter-btn" data-kategori="Wisata Gunung">Wisata Gunung</button>
+                <button type="button" class="filter-btn" data-kategori="Wisata Pantai">Wisata Pantai</button>
+                <button type="button" class="filter-btn" data-kategori="Wisata Danau">Wisata Danau</button>
+            </div>
+        </section>
+
+        <!-- FITUR 4: DAFTAR KARTU DESTINASI (DIRENDER SECARA DINAMIS DARI data.js) -->
+        <section class="destinasi-list" id="destinasiListContainer">
+            <!-- Kartu destinasi akan dirender oleh JavaScript dari data.js -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 RajaWisata. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT DATA TERPUSAT & LOGIKA -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
